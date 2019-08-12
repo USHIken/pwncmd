@@ -147,7 +147,6 @@ def pwncmd_list(args):
 def pwncmd_desc(args):
     pwncmd_desc = _make_cmd_list(cmds=args.command)
     for cmd in pwncmd_desc:
-        print(cmd.desc["functions"].keys())
     #max_width = max(len(_conv_color(cmd.path, Color.RED)) for cmd in pwncmd_desc)
 
     print("pwnable command description.\n---")
